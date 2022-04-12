@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.maindiv{
+    border: 1px solid black;
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+
+}
+.hoverdiv{
+    height: 200px;
+    width: 200px;
+   
+   
+    position: relative;
+}
+img{
+    max-width: 100%;
+}
+.hoverinner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(120, 236, 42,.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+
+}
+h2 {
+    margin-top: 74px;
+    font-size: 28px;
+}
+.hoverdiv:hover .hoverinner{
+    visibility: visible;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
